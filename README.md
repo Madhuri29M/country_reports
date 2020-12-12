@@ -6,13 +6,13 @@ Application to store country reports data.
 
 Features:
 - Client side validations (to validate empty fields)
-	Testcase : Please leave all the fields blank and submit.
+	- Testcase : Please leave all the fields blank and submit.
 - Server side validations (to validate min and max length of the data)
-	Testcase : Please enter less than 3 characters in some of the fields and submit.
+	- Testcase : Please enter less than 3 characters in some of the fields and submit.
 - Synchronized Vertical Scroll for sections
 
 Example Json format stored in CountryReport Table :
-
+```json
 {
     "country_id": "Ctr1",
     "country_name": "India",
@@ -59,5 +59,5 @@ Example Json format stored in CountryReport Table :
         }
     }
 }
-
+```
 
