@@ -13,11 +13,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-/*Route::get('/', function () {
-    return view('welcome');
-});*/
-
-Route::get('/', function () {
-    return redirect()->route('country_reports.index');
-})->name('front');
-Route::resource('/country_reports','CountryReportController');
+Route::get('/','CountryReportController@index')->name('country_reports.index');
+Route::post('/country_reports/store','CountryReportController@store')->name('country_reports.store');
